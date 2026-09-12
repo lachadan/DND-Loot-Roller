@@ -1,0 +1,2289 @@
+{
+  "tables": [
+    {
+      "die": 1,
+      "entries": [
+        {
+          "min": 1,
+          "max": 1,
+          "description": "50"
+        },
+        {
+          "min": 2,
+          "max": 2,
+          "description": "60"
+        },
+        {
+          "min": 3,
+          "max": 3,
+          "description": "70"
+        },
+        {
+          "min": 4,
+          "max": 4,
+          "description": "80"
+        },
+        {
+          "min": 5,
+          "max": 5,
+          "description": "90"
+        },
+        {
+          "min": 6,
+          "max": 6,
+          "description": "100"
+        },
+        {
+          "min": 7,
+          "max": 7,
+          "description": "110"
+        },
+        {
+          "min": 8,
+          "max": 8,
+          "description": "120"
+        },
+        {
+          "min": 9,
+          "max": 9,
+          "description": "130"
+        },
+        {
+          "min": 10,
+          "max": 10,
+          "description": "140"
+        },
+        {
+          "min": 11,
+          "max": 11,
+          "description": "150"
+        },
+        {
+          "min": 12,
+          "max": 12,
+          "description": "160"
+        },
+        {
+          "min": 13,
+          "max": 13,
+          "description": "170"
+        },
+        {
+          "min": 14,
+          "max": 14,
+          "description": "180"
+        },
+        {
+          "min": 15,
+          "max": 15,
+          "description": "190"
+        },
+        {
+          "min": 16,
+          "max": 16,
+          "description": "200"
+        },
+        {
+          "min": 17,
+          "max": 17,
+          "description": "210"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "description": "220"
+        },
+        {
+          "min": 19,
+          "max": 19,
+          "description": "230"
+        },
+        {
+          "min": 20,
+          "max": 20,
+          "description": "240"
+        },
+        {
+          "min": 21,
+          "max": 21,
+          "description": "250"
+        },
+        {
+          "min": 22,
+          "max": 22,
+          "description": "260"
+        },
+        {
+          "min": 23,
+          "max": 23,
+          "description": "270"
+        },
+        {
+          "min": 24,
+          "max": 24,
+          "description": "280"
+        },
+        {
+          "min": 25,
+          "max": 25,
+          "description": "290"
+        },
+        {
+          "min": 26,
+          "max": 26,
+          "description": "300"
+        },
+        {
+          "min": 27,
+          "max": 27,
+          "description": "310"
+        },
+        {
+          "min": 28,
+          "max": 28,
+          "description": "320"
+        },
+        {
+          "min": 29,
+          "max": 29,
+          "description": "330"
+        },
+        {
+          "min": 30,
+          "max": 30,
+          "description": "340"
+        },
+        {
+          "min": 31,
+          "max": 31,
+          "description": "350"
+        },
+        {
+          "min": 32,
+          "max": 32,
+          "description": "360"
+        },
+        {
+          "min": 33,
+          "max": 33,
+          "description": "370"
+        },
+        {
+          "min": 34,
+          "max": 34,
+          "description": "380"
+        },
+        {
+          "min": 35,
+          "max": 35,
+          "description": "390"
+        },
+        {
+          "min": 36,
+          "max": 36,
+          "description": "400"
+        },
+        {
+          "min": 37,
+          "max": 37,
+          "description": "410"
+        },
+        {
+          "min": 38,
+          "max": 38,
+          "description": "420"
+        },
+        {
+          "min": 39,
+          "max": 39,
+          "description": "430"
+        },
+        {
+          "min": 40,
+          "max": 40,
+          "description": "440"
+        },
+        {
+          "min": 41,
+          "max": 41,
+          "description": "450"
+        },
+        {
+          "min": 42,
+          "max": 42,
+          "description": "460"
+        },
+        {
+          "min": 43,
+          "max": 43,
+          "description": "470"
+        },
+        {
+          "min": 44,
+          "max": 44,
+          "description": "480"
+        },
+        {
+          "min": 45,
+          "max": 45,
+          "description": "490"
+        },
+        {
+          "min": 46,
+          "max": 46,
+          "description": "500"
+        },
+        {
+          "min": 47,
+          "max": 47,
+          "description": "510"
+        },
+        {
+          "min": 48,
+          "max": 48,
+          "description": "520"
+        },
+        {
+          "min": 49,
+          "max": 49,
+          "description": "530"
+        },
+        {
+          "min": 50,
+          "max": 50,
+          "description": "540"
+        },
+        {
+          "min": 51,
+          "max": 51,
+          "description": "550"
+        },
+        {
+          "min": 52,
+          "max": 52,
+          "description": "560"
+        },
+        {
+          "min": 53,
+          "max": 53,
+          "description": "570"
+        },
+        {
+          "min": 54,
+          "max": 54,
+          "description": "580"
+        },
+        {
+          "min": 55,
+          "max": 55,
+          "description": "590"
+        },
+        {
+          "min": 56,
+          "max": 56,
+          "description": "600"
+        },
+        {
+          "min": 57,
+          "max": 57,
+          "description": "610"
+        },
+        {
+          "min": 58,
+          "max": 58,
+          "description": "620"
+        },
+        {
+          "min": 59,
+          "max": 59,
+          "description": "630"
+        },
+        {
+          "min": 60,
+          "max": 60,
+          "description": "640"
+        },
+        {
+          "min": 61,
+          "max": 61,
+          "description": "650"
+        },
+        {
+          "min": 62,
+          "max": 62,
+          "description": "660"
+        },
+        {
+          "min": 63,
+          "max": 63,
+          "description": "670"
+        },
+        {
+          "min": 64,
+          "max": 64,
+          "description": "680"
+        },
+        {
+          "min": 65,
+          "max": 65,
+          "description": "690"
+        },
+        {
+          "min": 66,
+          "max": 66,
+          "description": "700"
+        },
+        {
+          "min": 67,
+          "max": 67,
+          "description": "710"
+        },
+        {
+          "min": 68,
+          "max": 68,
+          "description": "720"
+        },
+        {
+          "min": 69,
+          "max": 69,
+          "description": "730"
+        },
+        {
+          "min": 70,
+          "max": 70,
+          "description": "740"
+        },
+        {
+          "min": 71,
+          "max": 71,
+          "description": "750"
+        },
+        {
+          "min": 72,
+          "max": 72,
+          "description": "760"
+        },
+        {
+          "min": 73,
+          "max": 73,
+          "description": "770"
+        },
+        {
+          "min": 74,
+          "max": 74,
+          "description": "780"
+        },
+        {
+          "min": 75,
+          "max": 75,
+          "description": "790"
+        },
+        {
+          "min": 76,
+          "max": 76,
+          "description": "800"
+        },
+        {
+          "min": 77,
+          "max": 77,
+          "description": "810"
+        },
+        {
+          "min": 78,
+          "max": 78,
+          "description": "820"
+        },
+        {
+          "min": 79,
+          "max": 79,
+          "description": "830"
+        },
+        {
+          "min": 80,
+          "max": 80,
+          "description": "840"
+        },
+        {
+          "min": 81,
+          "max": 81,
+          "description": "850"
+        },
+        {
+          "min": 82,
+          "max": 82,
+          "description": "860"
+        },
+        {
+          "min": 83,
+          "max": 83,
+          "description": "870"
+        },
+        {
+          "min": 84,
+          "max": 84,
+          "description": "880"
+        },
+        {
+          "min": 85,
+          "max": 85,
+          "description": "890"
+        },
+        {
+          "min": 86,
+          "max": 86,
+          "description": "900"
+        },
+        {
+          "min": 87,
+          "max": 87,
+          "description": "910"
+        },
+        {
+          "min": 88,
+          "max": 88,
+          "description": "920"
+        },
+        {
+          "min": 89,
+          "max": 89,
+          "description": "930"
+        },
+        {
+          "min": 90,
+          "max": 90,
+          "description": "940"
+        },
+        {
+          "min": 91,
+          "max": 91,
+          "description": "950"
+        },
+        {
+          "min": 92,
+          "max": 92,
+          "description": "960"
+        },
+        {
+          "min": 93,
+          "max": 93,
+          "description": "970"
+        },
+        {
+          "min": 94,
+          "max": 94,
+          "description": "980"
+        },
+        {
+          "min": 95,
+          "max": 95,
+          "description": "990"
+        },
+        {
+          "min": 96,
+          "max": 96,
+          "description": "1000"
+        },
+        {
+          "min": 97,
+          "max": 97,
+          "description": "1010"
+        },
+        {
+          "min": 98,
+          "max": 98,
+          "description": "1020"
+        },
+        {
+          "min": 99,
+          "max": 99,
+          "description": "1030"
+        },
+        {
+          "min": 100,
+          "max": 100,
+          "description": "1040"
+        }
+      ]
+    },
+    {
+      "die": 2,
+      "entries": [
+        {
+          "min": 1,
+          "max": 15,
+          "description": "Weapon, +1"
+        },
+        {
+          "min": 16,
+          "max": 18,
+          "description": "Shield,+ 1"
+        },
+        {
+          "min": 19,
+          "max": 21,
+          "description": "Sentinel shield"
+        },
+        {
+          "min": 22,
+          "max": 23,
+          "description": "Amulet of proof against detection and location"
+        },
+        {
+          "min": 24,
+          "max": 25,
+          "description": "Boots of elvenkind"
+        },
+        {
+          "min": 26,
+          "max": 27,
+          "description": "Boots of striding and springing"
+        },
+        {
+          "min": 27,
+          "max": 29,
+          "description": "Bracers of archery"
+        },
+        {
+          "min": 30,
+          "max": 31,
+          "description": "Brooch of shielding"
+        },
+        {
+          "min": 32,
+          "max": 33,
+          "description": "Broom of flying"
+        },
+        {
+          "min": 34,
+          "max": 35,
+          "description": "Cloak of elvenkind"
+        },
+        {
+          "min": 36,
+          "max": 37,
+          "description": "Cloak of protection"
+        },
+        {
+          "min": 38,
+          "max": 39,
+          "description": "Gauntlets of ogre power"
+        },
+        {
+          "min": 40,
+          "max": 41,
+          "description": "Hat of disguise"
+        },
+        {
+          "min": 42,
+          "max": 43,
+          "description": "Javelin of lightning"
+        },
+        {
+          "min": 44,
+          "max": 45,
+          "description": "Pearl of power"
+        },
+        {
+          "min": 46,
+          "max": 47,
+          "description": "Rod of the pact keeper, + 1"
+        },
+        {
+          "min": 48,
+          "max": 49,
+          "description": "Slippers of spider climbing"
+        },
+        {
+          "min": 50,
+          "max": 51,
+          "description": "Staff of the adder"
+        },
+        {
+          "min": 52,
+          "max": 53,
+          "description": "Staff of the python"
+        },
+        {
+          "min": 54,
+          "max": 55,
+          "description": "Sword of vengeance"
+        },
+        {
+          "min": 56,
+          "max": 57,
+          "description": "Trident of fish command"
+        },
+        {
+          "min": 58,
+          "max": 59,
+          "description": "Wand of magic missiles"
+        },
+        {
+          "min": 60,
+          "max": 61,
+          "description": "Wand of the war mage, + 1"
+        },
+        {
+          "min": 62,
+          "max": 63,
+          "description": "Wand of web"
+        },
+        {
+          "min": 64,
+          "max": 65,
+          "description": "Weapon of warning"
+        },
+        {
+          "min": 66,
+          "max": 66,
+          "description": "Adamantine armor (chain mail)"
+        },
+        {
+          "min": 67,
+          "max": 67,
+          "description": "Adamantine armor (chain shirt)"
+        },
+        {
+          "min": 68,
+          "max": 68,
+          "description": "Adamantine armor (scale mail)"
+        },
+        {
+          "min": 69,
+          "max": 69,
+          "description": "Bag of tricks (gray)"
+        },
+        {
+          "min": 70,
+          "max": 70,
+          "description": "Bag of tricks (rust)"
+        },
+        {
+          "min": 71,
+          "max": 71,
+          "description": "Bag of tricks (tan)"
+        },
+        {
+          "min": 72,
+          "max": 72,
+          "description": "Boots of the winterlands"
+        },
+        {
+          "min": 73,
+          "max": 73,
+          "description": "Circlet of blasting"
+        },
+        {
+          "min": 74,
+          "max": 74,
+          "description": "Deck of illusions"
+        },
+        {
+          "min": 75,
+          "max": 75,
+          "description": "Eversmoking bottle"
+        },
+        {
+          "min": 76,
+          "max": 76,
+          "description": "Eyes of charming"
+        },
+        {
+          "min": 77,
+          "max": 77,
+          "description": "Eyes of the eagle"
+        },
+        {
+          "min": 78,
+          "max": 78,
+          "description": "Figurine of wondrous power (silver raven)"
+        },
+        {
+          "min": 79,
+          "max": 79,
+          "description": "Gem of brightness"
+        },
+        {
+          "min": 80,
+          "max": 80,
+          "description": "Gloves of missile snaring"
+        },
+        {
+          "min": 81,
+          "max": 81,
+          "description": "Gloves of swimming and climbing"
+        },
+        {
+          "min": 82,
+          "max": 82,
+          "description": "Gloves of thievery"
+        },
+        {
+          "min": 83,
+          "max": 83,
+          "description": "Headband of intellect"
+        },
+        {
+          "min": 84,
+          "max": 84,
+          "description": "Helm of telepathy"
+        },
+        {
+          "min": 85,
+          "max": 85,
+          "description": "Instrument of the bards (Doss lute)"
+        },
+        {
+          "min": 86,
+          "max": 86,
+          "description": "Instrument of the bards (Fochlucan bandore)"
+        },
+        {
+          "min": 87,
+          "max": 87,
+          "description": "Instrument of the bards (Mac-Fuimidh cittern)"
+        },
+        {
+          "min": 88,
+          "max": 88,
+          "description": "Medallion of thoughts"
+        },
+        {
+          "min": 89,
+          "max": 89,
+          "description": "Necklace of adaptation"
+        },
+        {
+          "min": 90,
+          "max": 90,
+          "description": "Periapt of wound closure"
+        },
+        {
+          "min": 91,
+          "max": 91,
+          "description": "Pipes of haunting"
+        },
+        {
+          "min": 92,
+          "max": 92,
+          "description": "Pipes of the sewers"
+        },
+        {
+          "min": 93,
+          "max": 93,
+          "description": "Ring of jumping"
+        },
+        {
+          "min": 94,
+          "max": 94,
+          "description": "Ring of mind shielding"
+        },
+        {
+          "min": 95,
+          "max": 95,
+          "description": "Ring of warmth"
+        },
+        {
+          "min": 96,
+          "max": 96,
+          "description": "Ring of water walking"
+        },
+        {
+          "min": 97,
+          "max": 97,
+          "description": "Quiver of Ehlonna"
+        },
+        {
+          "min": 98,
+          "max": 98,
+          "description": "Stone of good luck"
+        },
+        {
+          "min": 99,
+          "max": 99,
+          "description": "Wind fan"
+        },
+        {
+          "min": 100,
+          "max": 100,
+          "description": "Winged boots"
+        }
+      ]
+    },
+    {
+      "die": 3,
+      "entries": [
+        {
+          "min": 1,
+          "max": 5,
+          "description": "Defender"
+        },
+        {
+          "min": 6,
+          "max": 10,
+          "description": "Hammer of thunderbolts"
+        },
+        {
+          "min": 11,
+          "max": 15,
+          "description": "Luck Blade"
+        },
+        {
+          "min": 16,
+          "max": 20,
+          "description": "Sword of answering"
+        },
+        {
+          "min": 21,
+          "max": 23,
+          "description": "Holy avenger"
+        },
+        {
+          "min": 24,
+          "max": 26,
+          "description": "Ring of djinni summoning"
+        },
+        {
+          "min": 27,
+          "max": 29,
+          "description": "Ring of invisibility"
+        },
+        {
+          "min": 30,
+          "max": 32,
+          "description": "Ring of spell turning"
+        },
+        {
+          "min": 36,
+          "max": 38,
+          "description": "Rod of lordly might"
+        },
+        {
+          "min": 39,
+          "max": 41,
+          "description": "Vorpal sword"
+        },
+        {
+          "min": 42,
+          "max": 43,
+          "description": "Belt of cloud giant strength"
+        },
+        {
+          "min": 44,
+          "max": 45,
+          "description": "Armor, +2 breastplate"
+        },
+        {
+          "min": 46,
+          "max": 47,
+          "description": "Armor, +3 chain mail"
+        },
+        {
+          "min": 48,
+          "max": 49,
+          "description": "Armor, +3 chain shirt"
+        },
+        {
+          "min": 50,
+          "max": 51,
+          "description": "Cloak of invisibility"
+        },
+        {
+          "min": 52,
+          "max": 53,
+          "description": "Crystal ball (legendary version)"
+        },
+        {
+          "min": 54,
+          "max": 55,
+          "description": "Armor, + 1 half plate"
+        },
+        {
+          "min": 56,
+          "max": 57,
+          "description": "Iron flask"
+        },
+        {
+          "min": 58,
+          "max": 59,
+          "description": "Armor, +3 leather"
+        },
+        {
+          "min": 60,
+          "max": 61,
+          "description": "Armor, +1 plate"
+        },
+        {
+          "min": 62,
+          "max": 63,
+          "description": "Robe of the archmagi"
+        },
+        {
+          "min": 64,
+          "max": 65,
+          "description": "Rod of resurrection"
+        },
+        {
+          "min": 66,
+          "max": 67,
+          "description": "Armor, +1 scale mail"
+        },
+        {
+          "min": 68,
+          "max": 69,
+          "description": "Scarab of protection"
+        },
+        {
+          "min": 70,
+          "max": 71,
+          "description": "Armor, +2 splint"
+        },
+        {
+          "min": 72,
+          "max": 73,
+          "description": "Armor, +2 studded leather"
+        },
+        {
+          "min": 74,
+          "max": 75,
+          "description": "Well of many worlds"
+        },
+        {
+          "min": 76,
+          "max": 76,
+          "description": "Magic armor (roll dl2)",
+          "subEntries": [
+            {
+              "min": 1,
+              "max": 2,
+              "description": "Armor, +2 half plate"
+            },
+            {
+              "min": 3,
+              "max": 4,
+              "description": "Armor, +2 plate"
+            },
+            {
+              "min": 5,
+              "max": 6,
+              "description": "Armor, +3 studded leather"
+            },
+            {
+              "min": 7,
+              "max": 8,
+              "description": "Armor, +3 breastplate"
+            },
+            {
+              "min": 9,
+              "max": 10,
+              "description": "Armor, +3 splint"
+            },
+            {
+              "min": 11,
+              "max": 11,
+              "description": "Armor, +3 half plate"
+            },
+            {
+              "min": 12,
+              "max": 12,
+              "description": "Armor, +3 plate"
+            }
+          ],
+          "subDie": 12
+        },
+        {
+          "min": 77,
+          "max": 77,
+          "description": "Apparatus of Kwalish"
+        },
+        {
+          "min": 78,
+          "max": 78,
+          "description": "Armor of invulnerability"
+        },
+        {
+          "min": 79,
+          "max": 79,
+          "description": "Belt of storm giant strength"
+        },
+        {
+          "min": 80,
+          "max": 80,
+          "description": "Cubic gate"
+        },
+        {
+          "min": 81,
+          "max": 81,
+          "description": "Deck of many things"
+        },
+        {
+          "min": 82,
+          "max": 82,
+          "description": "Efreeti chain"
+        },
+        {
+          "min": 83,
+          "max": 83,
+          "description": "Armor of resistance (half plate)"
+        },
+        {
+          "min": 84,
+          "max": 84,
+          "description": "Horn ofValhalla (iron)"
+        },
+        {
+          "min": 85,
+          "max": 85,
+          "description": "Instrument of the bards (OIIamh harp)"
+        },
+        {
+          "min": 86,
+          "max": 86,
+          "description": "loun stone (greater absorption)"
+        },
+        {
+          "min": 87,
+          "max": 87,
+          "description": "loun stone (mastery)"
+        },
+        {
+          "min": 88,
+          "max": 88,
+          "description": "loun stone (regeneration)"
+        },
+        {
+          "min": 89,
+          "max": 89,
+          "description": "Plate armor of etherealness"
+        },
+        {
+          "min": 90,
+          "max": 90,
+          "description": "Plate armor of resistance"
+        },
+        {
+          "min": 91,
+          "max": 91,
+          "description": "Ring of air elemental command"
+        },
+        {
+          "min": 92,
+          "max": 92,
+          "description": "Ring of earthelemental command"
+        },
+        {
+          "min": 93,
+          "max": 93,
+          "description": "Ring of fire elemental command"
+        },
+        {
+          "min": 94,
+          "max": 94,
+          "description": "Ring of three wishes"
+        },
+        {
+          "min": 95,
+          "max": 95,
+          "description": "Ring of water elemental command"
+        },
+        {
+          "min": 96,
+          "max": 96,
+          "description": "Sphere of annihilation"
+        },
+        {
+          "min": 97,
+          "max": 97,
+          "description": "Talisman of pure good"
+        },
+        {
+          "min": 98,
+          "max": 98,
+          "description": "Talisman of the sphere"
+        },
+        {
+          "min": 99,
+          "max": 99,
+          "description": "Talisman of ultimate evil"
+        },
+        {
+          "min": 100,
+          "max": 100,
+          "description": "Tome of the stilled tongue"
+        }
+      ]
+    },
+    {
+      "die": 4,
+      "entries": [
+        {
+          "min": 1,
+          "max": 15,
+          "description": "Potion of greater healing"
+        },
+        {
+          "min": 16,
+          "max": 22,
+          "description": "Potion of fire breath"
+        },
+        {
+          "min": 23,
+          "max": 29,
+          "description": "Potion of resistance"
+        },
+        {
+          "min": 30,
+          "max": 34,
+          "description": "Ammunition, +1"
+        },
+        {
+          "min": 35,
+          "max": 39,
+          "description": "Potion of animal friendship"
+        },
+        {
+          "min": 40,
+          "max": 44,
+          "description": "Potion of hill giant strength"
+        },
+        {
+          "min": 45,
+          "max": 49,
+          "description": "Potion of growth"
+        },
+        {
+          "min": 50,
+          "max": 54,
+          "description": "Potion of water breathing"
+        },
+        {
+          "min": 55,
+          "max": 59,
+          "description": "Spell scroll (2nd level)"
+        },
+        {
+          "min": 60,
+          "max": 64,
+          "description": "Spell scroll (3rd level)"
+        },
+        {
+          "min": 65,
+          "max": 67,
+          "description": "Bag of holding"
+        },
+        {
+          "min": 68,
+          "max": 70,
+          "description": "Keoghtom's ointment"
+        },
+        {
+          "min": 71,
+          "max": 73,
+          "description": "Oil of slipperiness"
+        },
+        {
+          "min": 74,
+          "max": 75,
+          "description": "Dust of disappearance"
+        },
+        {
+          "min": 76,
+          "max": 77,
+          "description": "Dust of dryness"
+        },
+        {
+          "min": 78,
+          "max": 79,
+          "description": "Dust of sneezing and choking"
+        },
+        {
+          "min": 80,
+          "max": 81,
+          "description": "Elemental gem"
+        },
+        {
+          "min": 82,
+          "max": 83,
+          "description": "Philter of love"
+        },
+        {
+          "min": 84,
+          "max": 84,
+          "description": "Alchemy jug"
+        },
+        {
+          "min": 85,
+          "max": 85,
+          "description": "Cap of water breathing"
+        },
+        {
+          "min": 86,
+          "max": 86,
+          "description": "Cloak of the manta ray"
+        },
+        {
+          "min": 87,
+          "max": 87,
+          "description": "Driftglobe"
+        },
+        {
+          "min": 88,
+          "max": 88,
+          "description": "Goggles of night"
+        },
+        {
+          "min": 89,
+          "max": 89,
+          "description": "Helm of comprehending languages"
+        },
+        {
+          "min": 90,
+          "max": 90,
+          "description": "Immovable rod"
+        },
+        {
+          "min": 91,
+          "max": 91,
+          "description": "Lantern of revealing"
+        },
+        {
+          "min": 92,
+          "max": 92,
+          "description": "Mariner's armor"
+        },
+        {
+          "min": 93,
+          "max": 93,
+          "description": "Mithral armor"
+        },
+        {
+          "min": 94,
+          "max": 94,
+          "description": "Potion of poison"
+        },
+        {
+          "min": 95,
+          "max": 95,
+          "description": "Ring of swimming"
+        },
+        {
+          "min": 96,
+          "max": 96,
+          "description": "Robe of useful items"
+        },
+        {
+          "min": 97,
+          "max": 97,
+          "description": "Rope of climbing"
+        },
+        {
+          "min": 98,
+          "max": 98,
+          "description": "Saddle of the cavalier"
+        },
+        {
+          "min": 99,
+          "max": 99,
+          "description": "Wand of magic detection"
+        },
+        {
+          "min": 100,
+          "max": 100,
+          "description": "Wand of secrets"
+        }
+      ]
+    },
+    {
+      "die": 5,
+      "entries": [
+        {
+          "min": 1,
+          "max": 11,
+          "description": "Weapon, +2"
+        },
+        {
+          "min": 12,
+          "max": 14,
+          "description": "Figurine of wondrous power (roll d8)",
+          "subEntries": [
+            {
+              "min": 1,
+              "max": 1,
+              "description": "Bronze griffon"
+            },
+            {
+              "min": 2,
+              "max": 2,
+              "description": "Ebony fly"
+            },
+            {
+              "min": 3,
+              "max": 3,
+              "description": "Golden lions"
+            },
+            {
+              "min": 4,
+              "max": 4,
+              "description": "Ivory goats"
+            },
+            {
+              "min": 5,
+              "max": 5,
+              "description": "Marble elephant"
+            },
+            {
+              "min": 6,
+              "max": 7,
+              "description": "Onyx dog"
+            },
+            {
+              "min": 8,
+              "max": 8,
+              "description": "Serpentine owl"
+            }
+          ],
+          "subDie": 8
+        },
+        {
+          "min": 15,
+          "max": 15,
+          "description": "Adamantine armor (breastplate)"
+        },
+        {
+          "min": 16,
+          "max": 16,
+          "description": "Adamantine armor (splint)"
+        },
+        {
+          "min": 17,
+          "max": 17,
+          "description": "Amulet of health"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "description": "Armor of vulnerability"
+        },
+        {
+          "min": 19,
+          "max": 19,
+          "description": "Arrow-catching shield"
+        },
+        {
+          "min": 20,
+          "max": 20,
+          "description": "Belt of dwarvenkind"
+        },
+        {
+          "min": 21,
+          "max": 21,
+          "description": "Belt of hill giant strength"
+        },
+        {
+          "min": 22,
+          "max": 22,
+          "description": "Berserker axe"
+        },
+        {
+          "min": 23,
+          "max": 23,
+          "description": "Boots of levitation"
+        },
+        {
+          "min": 24,
+          "max": 24,
+          "description": "Boots of speed"
+        },
+        {
+          "min": 25,
+          "max": 25,
+          "description": "Bowl of commanding water elementals"
+        },
+        {
+          "min": 26,
+          "max": 26,
+          "description": "Bracers of defense"
+        },
+        {
+          "min": 27,
+          "max": 27,
+          "description": "Brazier of commanding fire elementals"
+        },
+        {
+          "min": 28,
+          "max": 28,
+          "description": "Cape of the mountebank"
+        },
+        {
+          "min": 29,
+          "max": 29,
+          "description": "Censer of controlling air elementals"
+        },
+        {
+          "min": 30,
+          "max": 30,
+          "description": "Armor, +1 chain mail"
+        },
+        {
+          "min": 31,
+          "max": 31,
+          "description": "Armor of resistance (chain mail)"
+        },
+        {
+          "min": 32,
+          "max": 32,
+          "description": "Armor of resistance (chain shirt)"
+        },
+        {
+          "min": 33,
+          "max": 33,
+          "description": "Armor,+ 1 chain shirt"
+        },
+        {
+          "min": 34,
+          "max": 34,
+          "description": "Cloak of displacement"
+        },
+        {
+          "min": 35,
+          "max": 35,
+          "description": "Cloak of the bat"
+        },
+        {
+          "min": 36,
+          "max": 36,
+          "description": "Cube of force"
+        },
+        {
+          "min": 37,
+          "max": 37,
+          "description": "Daern's instant fortress"
+        },
+        {
+          "min": 38,
+          "max": 38,
+          "description": "Dagger of venom"
+        },
+        {
+          "min": 39,
+          "max": 39,
+          "description": "Dimensional shackles"
+        },
+        {
+          "min": 40,
+          "max": 40,
+          "description": "Dragon slayer"
+        },
+        {
+          "min": 41,
+          "max": 41,
+          "description": "Elven chain"
+        },
+        {
+          "min": 42,
+          "max": 42,
+          "description": "Flame tongue"
+        },
+        {
+          "min": 43,
+          "max": 43,
+          "description": "Gem of seeing"
+        },
+        {
+          "min": 44,
+          "max": 44,
+          "description": "Giant slayer"
+        },
+        {
+          "min": 45,
+          "max": 45,
+          "description": "Clamoured studded leather"
+        },
+        {
+          "min": 46,
+          "max": 46,
+          "description": "Helm of teleportation"
+        },
+        {
+          "min": 47,
+          "max": 47,
+          "description": "Horn of blasting"
+        },
+        {
+          "min": 48,
+          "max": 48,
+          "description": "Horn of Valhalla (silver or brass)"
+        },
+        {
+          "min": 49,
+          "max": 49,
+          "description": "Instrument of the bards (Canaithmandolin)"
+        },
+        {
+          "min": 50,
+          "max": 50,
+          "description": "Instrument ofthe bards (Cii lyre)"
+        },
+        {
+          "min": 51,
+          "max": 51,
+          "description": "loun stone (awareness)"
+        },
+        {
+          "min": 52,
+          "max": 52,
+          "description": "loun stone (protection)"
+        },
+        {
+          "min": 53,
+          "max": 53,
+          "description": "loun stone (reserve)"
+        },
+        {
+          "min": 54,
+          "max": 54,
+          "description": "loun stone (sustenance)"
+        },
+        {
+          "min": 55,
+          "max": 55,
+          "description": "Iron bands of Bilarro"
+        },
+        {
+          "min": 56,
+          "max": 56,
+          "description": "Armor, + 1 leather"
+        },
+        {
+          "min": 57,
+          "max": 57,
+          "description": "Armor of resistance (leather)"
+        },
+        {
+          "min": 58,
+          "max": 58,
+          "description": "Mace of disruption"
+        },
+        {
+          "min": 59,
+          "max": 59,
+          "description": "Mace of smiting"
+        },
+        {
+          "min": 60,
+          "max": 60,
+          "description": "Mace of terror"
+        },
+        {
+          "min": 61,
+          "max": 61,
+          "description": "Mantle of spell resistance"
+        },
+        {
+          "min": 62,
+          "max": 62,
+          "description": "Necklace of prayer beads"
+        },
+        {
+          "min": 63,
+          "max": 63,
+          "description": "Periapt of proof against poison"
+        },
+        {
+          "min": 64,
+          "max": 64,
+          "description": "Ring of animal influence"
+        },
+        {
+          "min": 65,
+          "max": 65,
+          "description": "Ring of evasion"
+        },
+        {
+          "min": 66,
+          "max": 66,
+          "description": "Ring of feather falling"
+        },
+        {
+          "min": 67,
+          "max": 67,
+          "description": "Ring of free action"
+        },
+        {
+          "min": 68,
+          "max": 68,
+          "description": "Ring of protection"
+        },
+        {
+          "min": 69,
+          "max": 69,
+          "description": "Ring of resistance"
+        },
+        {
+          "min": 70,
+          "max": 70,
+          "description": "Ring of spell storing"
+        },
+        {
+          "min": 71,
+          "max": 71,
+          "description": "Ring of the ram"
+        },
+        {
+          "min": 72,
+          "max": 72,
+          "description": "Ring of X-ray vision"
+        },
+        {
+          "min": 73,
+          "max": 73,
+          "description": "Robe of eyes"
+        },
+        {
+          "min": 74,
+          "max": 74,
+          "description": "Rod of rulership"
+        },
+        {
+          "min": 75,
+          "max": 75,
+          "description": "Rod of the pact keeper, +2"
+        },
+        {
+          "min": 76,
+          "max": 76,
+          "description": "Rope of entanglement"
+        },
+        {
+          "min": 77,
+          "max": 77,
+          "description": "Armor, +1 scale mail"
+        },
+        {
+          "min": 78,
+          "max": 78,
+          "description": "Armor of resistance (scale mail)"
+        },
+        {
+          "min": 79,
+          "max": 79,
+          "description": "Shield, +2"
+        },
+        {
+          "min": 80,
+          "max": 80,
+          "description": "Shield of missile attraction"
+        },
+        {
+          "min": 81,
+          "max": 81,
+          "description": "Staff of charming"
+        },
+        {
+          "min": 82,
+          "max": 82,
+          "description": "Staff of healing"
+        },
+        {
+          "min": 83,
+          "max": 83,
+          "description": "Staff of swarming insects"
+        },
+        {
+          "min": 84,
+          "max": 84,
+          "description": "Staff of the woodlands"
+        },
+        {
+          "min": 85,
+          "max": 85,
+          "description": "Staff of withering"
+        },
+        {
+          "min": 86,
+          "max": 86,
+          "description": "Stone of controlling earthelementals"
+        },
+        {
+          "min": 87,
+          "max": 87,
+          "description": "Sun blade"
+        },
+        {
+          "min": 88,
+          "max": 88,
+          "description": "Sword of life stealing"
+        },
+        {
+          "min": 89,
+          "max": 89,
+          "description": "Sword of wounding"
+        },
+        {
+          "min": 90,
+          "max": 90,
+          "description": "Tentacle rod"
+        },
+        {
+          "min": 91,
+          "max": 91,
+          "description": "Vicious weapon"
+        },
+        {
+          "min": 92,
+          "max": 92,
+          "description": "Wand of binding"
+        },
+        {
+          "min": 93,
+          "max": 93,
+          "description": "Wand of enemy detection"
+        },
+        {
+          "min": 94,
+          "max": 94,
+          "description": "Wand of fear"
+        },
+        {
+          "min": 95,
+          "max": 95,
+          "description": "Wand of fireballs"
+        },
+        {
+          "min": 96,
+          "max": 96,
+          "description": "Wand of lightning bolts"
+        },
+        {
+          "min": 97,
+          "max": 97,
+          "description": "Wand of paralysis"
+        },
+        {
+          "min": 98,
+          "max": 98,
+          "description": "Wand of the war mage, +2"
+        },
+        {
+          "min": 99,
+          "max": 99,
+          "description": "Wand of wonder"
+        },
+        {
+          "min": 100,
+          "max": 100,
+          "description": "Wings of flying"
+        }
+      ]
+    },
+    {
+      "die": 6,
+      "entries": [
+        {
+          "min": 1,
+          "max": 1,
+          "description": "Potion of Healing"
+        },
+        {
+          "min": 2,
+          "max": 2,
+          "description": "Spell Scroll Level 0"
+        },
+        {
+          "min": 3,
+          "max": 3,
+          "description": "Spell Scroll Level 1"
+        },
+        {
+          "min": 4,
+          "max": 4,
+          "description": "Elixir of Health"
+        },
+        {
+          "min": 5,
+          "max": 5,
+          "description": "Spell Scroll Level 2"
+        },
+        {
+          "min": 6,
+          "max": 6,
+          "description": "Potion of Fire Breath"
+        },
+        {
+          "min": 7,
+          "max": 7,
+          "description": "Potion of Greater Healing"
+        },
+        {
+          "min": 8,
+          "max": 8,
+          "description": "Potion of Invisibility"
+        },
+        {
+          "min": 9,
+          "max": 9,
+          "description": "Potion of Heroism"
+        },
+        {
+          "min": 10,
+          "max": 10,
+          "description": "Potion of Water Breathing"
+        },
+        {
+          "min": 11,
+          "max": 11,
+          "description": "Potion of Animal Friendship"
+        },
+        {
+          "min": 12,
+          "max": 12,
+          "description": "Spell Scroll Level 3"
+        },
+        {
+          "min": 13,
+          "max": 13,
+          "description": "Necklace of Fireballs (1 Bead)"
+        },
+        {
+          "min": 14,
+          "max": 14,
+          "description": "Potion of Gaseous Form"
+        },
+        {
+          "min": 15,
+          "max": 15,
+          "description": "Horn of Blasting"
+        },
+        {
+          "min": 16,
+          "max": 16,
+          "description": "Potion of Superior Healing"
+        },
+        {
+          "min": 17,
+          "max": 17,
+          "description": "Necklace of Fireballs (2 Beads)"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "description": "Potion of Flying"
+        },
+        {
+          "min": 19,
+          "max": 19,
+          "description": "Elemental Gem"
+        },
+        {
+          "min": 20,
+          "max": 20,
+          "description": "Necklace of Fireballs (3 Beads)"
+        },
+        {
+          "min": 21,
+          "max": 21,
+          "description": "Potion of Vitality"
+        },
+        {
+          "min": 22,
+          "max": 22,
+          "description": "Potion of Supreme Healing"
+        },
+        {
+          "min": 23,
+          "max": 23,
+          "description": "Chime of Opening"
+        },
+        {
+          "min": 24,
+          "max": 24,
+          "description": "Necklace of Fireballs (4 Beads)"
+        },
+        {
+          "min": 25,
+          "max": 25,
+          "description": "Potion of Healing"
+        },
+        {
+          "min": 26,
+          "max": 26,
+          "description": "Spell Scroll Level 0"
+        },
+        {
+          "min": 27,
+          "max": 27,
+          "description": "Spell Scroll Level 1"
+        },
+        {
+          "min": 28,
+          "max": 28,
+          "description": "Spell Scroll Level 2"
+        },
+        {
+          "min": 29,
+          "max": 29,
+          "description": "Potion of Fire Breath"
+        },
+        {
+          "min": 30,
+          "max": 30,
+          "description": "Potion of Greater Healing"
+        },
+        {
+          "min": 31,
+          "max": 31,
+          "description": "Potion of Invisibility"
+        },
+        {
+          "min": 32,
+          "max": 32,
+          "description": "Potion of Heroism"
+        },
+        {
+          "min": 33,
+          "max": 33,
+          "description": "Potion of Water Breathing"
+        },
+        {
+          "min": 34,
+          "max": 34,
+          "description": "Potion of Animal Friendship"
+        },
+        {
+          "min": 35,
+          "max": 35,
+          "description": "Necklace of Fireballs (1 Bead)"
+        },
+        {
+          "min": 36,
+          "max": 36,
+          "description": "Potion of Gaseous Form"
+        },
+        {
+          "min": 37,
+          "max": 37,
+          "description": "Potion of Superior Healing"
+        },
+        {
+          "min": 38,
+          "max": 38,
+          "description": "Spell Scroll Level 3"
+        },
+        {
+          "min": 39,
+          "max": 39,
+          "description": "Necklace of Fireballs (1 Bead)"
+        },
+        {
+          "min": 40,
+          "max": 40,
+          "description": "Potion of Gaseous Form"
+        },
+        {
+          "min": 41,
+          "max": 41,
+          "description": "Horn of Blasting"
+        },
+        {
+          "min": 42,
+          "max": 42,
+          "description": "Potion of Superior Healing"
+        },
+        {
+          "min": 43,
+          "max": 43,
+          "description": "Necklace of Fireballs (2 Beads)"
+        },
+        {
+          "min": 44,
+          "max": 44,
+          "description": "Potion of Flying"
+        },
+        {
+          "min": 45,
+          "max": 45,
+          "description": "Elemental Gem"
+        },
+        {
+          "min": 46,
+          "max": 46,
+          "description": "Necklace of Fireballs (3 Beads)"
+        },
+        {
+          "min": 47,
+          "max": 47,
+          "description": "Potion of Flying"
+        },
+        {
+          "min": 48,
+          "max": 48,
+          "description": "Dust of Dryness"
+        },
+        {
+          "min": 49,
+          "max": 49,
+          "description": "Potion of Greater Healing"
+        },
+        {
+          "min": 50,
+          "max": 50,
+          "description": "Potion of Greater Healing"
+        },
+        {
+          "min": 51,
+          "max": 51,
+          "description": "Spell Scroll Level 2"
+        },
+        {
+          "min": 52,
+          "max": 52,
+          "description": "Potion of Fire Breath"
+        },
+        {
+          "min": 53,
+          "max": 53,
+          "description": "Potion of Greater Healing"
+        },
+        {
+          "min": 54,
+          "max": 54,
+          "description": "Potion of Invisibility"
+        },
+        {
+          "min": 55,
+          "max": 55,
+          "description": "Potion of Heroism"
+        },
+        {
+          "min": 56,
+          "max": 56,
+          "description": "Potion of Water Breathing"
+        },
+        {
+          "min": 57,
+          "max": 57,
+          "description": "Potion of Animal Friendship"
+        },
+        {
+          "min": 58,
+          "max": 58,
+          "description": "Necklace of Fireballs (1 Bead)"
+        },
+        {
+          "min": 59,
+          "max": 59,
+          "description": "Potion of Gaseous Form"
+        },
+        {
+          "min": 60,
+          "max": 60,
+          "description": "Potion of Superior Healing"
+        },
+        {
+          "min": 61,
+          "max": 61,
+          "description": "Spell Scroll Level 3"
+        },
+        {
+          "min": 62,
+          "max": 62,
+          "description": "Necklace of Fireballs (1 Bead)"
+        },
+        {
+          "min": 63,
+          "max": 63,
+          "description": "Potion of Gaseous Form"
+        },
+        {
+          "min": 64,
+          "max": 64,
+          "description": "Horn of Blasting"
+        },
+        {
+          "min": 65,
+          "max": 65,
+          "description": "Potion of Superior Healing"
+        },
+        {
+          "min": 66,
+          "max": 66,
+          "description": "Necklace of Fireballs (2 Beads)"
+        },
+        {
+          "min": 67,
+          "max": 67,
+          "description": "Potion of Flying"
+        },
+        {
+          "min": 68,
+          "max": 68,
+          "description": "Elemental Gem"
+        },
+        {
+          "min": 69,
+          "max": 69,
+          "description": "Necklace of Fireballs (3 Beads)"
+        },
+        {
+          "min": 70,
+          "max": 70,
+          "description": "Potion of Climbing"
+        },
+        {
+          "min": 71,
+          "max": 71,
+          "description": "Potion of Flying"
+        },
+        {
+          "min": 72,
+          "max": 72,
+          "description": "Dust of Dryness"
+        },
+        {
+          "min": 73,
+          "max": 73,
+          "description": "Potion of Greater Healing"
+        },
+        {
+          "min": 74,
+          "max": 74,
+          "description": "Potion of Greater Healing"
+        },
+        {
+          "min": 75,
+          "max": 75,
+          "description": "Potion of Flying"
+        },
+        {
+          "min": 76,
+          "max": 76,
+          "description": "Potion of Healing"
+        },
+        {
+          "min": 77,
+          "max": 77,
+          "description": "Spell Scroll Level 0"
+        },
+        {
+          "min": 78,
+          "max": 78,
+          "description": "Spell Scroll Level 1"
+        },
+        {
+          "min": 79,
+          "max": 79,
+          "description": "Spell Scroll Level 2"
+        },
+        {
+          "min": 80,
+          "max": 80,
+          "description": "Potion of Fire Breath"
+        },
+        {
+          "min": 81,
+          "max": 81,
+          "description": "Potion of Greater Healing"
+        },
+        {
+          "min": 82,
+          "max": 82,
+          "description": "Potion of Invisibility"
+        },
+        {
+          "min": 83,
+          "max": 83,
+          "description": "Potion of Heroism"
+        },
+        {
+          "min": 84,
+          "max": 84,
+          "description": "Potion of Water Breathing"
+        },
+        {
+          "min": 85,
+          "max": 85,
+          "description": "Potion of Animal Friendship"
+        },
+        {
+          "min": 86,
+          "max": 86,
+          "description": "Necklace of Fireballs (1 Bead)"
+        },
+        {
+          "min": 87,
+          "max": 87,
+          "description": "Potion of Gaseous Form"
+        },
+        {
+          "min": 88,
+          "max": 88,
+          "description": "Potion of Superior Healing"
+        },
+        {
+          "min": 89,
+          "max": 89,
+          "description": "Potion of Climbing"
+        },
+        {
+          "min": 90,
+          "max": 90,
+          "description": "Potion of Flying"
+        },
+        {
+          "min": 91,
+          "max": 91,
+          "description": "Spell Scroll Level 3"
+        },
+        {
+          "min": 92,
+          "max": 92,
+          "description": "Necklace of Fireballs (1 Bead)"
+        },
+        {
+          "min": 93,
+          "max": 93,
+          "description": "Potion of Gaseous Form"
+        },
+        {
+          "min": 94,
+          "max": 94,
+          "description": "Horn of Blasting"
+        },
+        {
+          "min": 95,
+          "max": 95,
+          "description": "Potion of Superior Healing"
+        },
+        {
+          "min": 96,
+          "max": 96,
+          "description": "Necklace of Fireballs (2 Beads)"
+        },
+        {
+          "min": 97,
+          "max": 97,
+          "description": "Potion of Flying"
+        },
+        {
+          "min": 98,
+          "max": 98,
+          "description": "Elemental Gem"
+        },
+        {
+          "min": 99,
+          "max": 99,
+          "description": "Necklace of Fireballs (3 Beads)"
+        },
+        {
+          "min": 100,
+          "max": 100,
+          "description": "Potion of Climbing"
+        }
+      ]
+    }
+  ],
+  "issues": [
+    "Table 2: roll 27 overlaps “Boots of striding and springing” and “Bracers of archery”. The app uses the first matching entry.",
+    "Table 3: no loot entry exists for roll(s) 33–35."
+  ]
+}
