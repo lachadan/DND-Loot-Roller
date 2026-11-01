@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="../HistoryStore.cs" Link="HistoryStore.cs" />
     <Compile Include="../Models.cs" Link="Models.cs" />
     <Compile Include="../SpreadsheetImporter.cs" Link="SpreadsheetImporter.cs" />
     <Compile Include="../LootStore.cs" Link="LootStore.cs" />

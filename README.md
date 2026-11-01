@@ -1,14 +1,14 @@
-# D&D Loot Roller v3.0 — D&D Beyond links edition
+# D&D Loot Roller v3.1 — Shared loot history
 
 ## Build and use
 
 1. Extract the ZIP to a writable folder.
-2. Double-click **Publish-Windows-x64.bat**. Requires the .NET 8 SDK / Visual Studio's **.NET desktop development** workload. The publisher opens the folder containing `DNDLootRoller.exe` when successful.
+2. In the packaged v3.1 ZIP, open `Windows-x64\DNDLootRoller.exe` (Windows x64; no separate .NET install required). When using this source repository, double-click **Publish-Windows-x64.bat** to build the app. Requires the .NET 8 SDK / Visual Studio's **.NET desktop development** workload. The publisher opens the folder containing `DNDLootRoller.exe` when successful.
 3. Launch the app. Click **Import Spreadsheet…** and select an `.xlsx` workbook.
 4. Review the warnings, worksheet-to-D6 mapping, loot rows, and subtables. Click **Import** (or **Import with warnings**) to activate it. Cancel leaves your current tables intact.
 5. Roll D6, choose a table manually, roll or enter D100, or click **Roll Both**, as before. For nested loot, click the **Roll D8/D12 Subtable** button, as in the original project.
 
-The **Active** label identifies the workbook. **Data Issues** always describes the active data. **Use Original Workbook** restores the embedded tables and saves that choice. History remains available for the current session, with a separator whenever the workbook changes.
+The **Active** label identifies the workbook. **Data Issues** always describes the active data. **Use Original Workbook** restores the embedded tables and saves that choice. Shared History retains records across restarts and workbook changes; the main window list shows recent rolls from this session.
 
 ## Clickable D&D Beyond item links
 
@@ -58,7 +58,7 @@ Coverage gaps and overlapping ranges are warnings requiring **Import with warnin
 
 The app saves one active imported dataset to `%LOCALAPPDATA%\DNDLootRoller\active-loot.json`. This is a snapshot of the data, not a live link: moving/deleting the source spreadsheet does not affect it. To pick up spreadsheet edits or switch to another workbook, import again. A new import replaces the saved dataset only after validation, review, and a successful save. The source workbook is never modified.
 
-If saved data is damaged or unreadable, the app shows a warning and starts with the original tables. Import again or use **Use Original Workbook** to recover. Roll history is session-only.
+If saved data is damaged or unreadable, the app shows a warning and starts with the original tables. Import again or use **Use Original Workbook** to recover. Shared history is stored separately and is unaffected by restoring the original workbook.
 
 ## Developer details and verification
 
@@ -70,9 +70,20 @@ From the project directory, run the regression checks with:
 dotnet run --project Tests/ImportTests.csproj -- .
 ```
 
-The regression suite was compiled and run with the installed .NET SDK: 1,021 assertions passed. It checks all 600 original D6/D100 outcomes, D8/D12 results, persistence replacement/reloading, inline text, original warnings, and malformed imports.
+Validation for v3.1: Release build and self-contained Windows x64 publish succeeded with zero warnings/errors. 1,032 regression assertions passed, covering all 600 original D6/D100 outcomes, subtables, import validation, history save/reload, combined inclusive filters, correction/deletion, backups, corruption protection and Excel text export. Main and history windows opened and initialized successfully in a Windows Forms control smoke check. A full manual visual walkthrough has not been performed.
 
-The Windows Forms application was successfully published as a self-contained Windows x64 executable using .NET SDK 10.0.401, targeting .NET 8. A startup process check passed. An additional 11 Windows Forms control checks passed for link clearing, item/subtable changes, currency, missing results, and the scrollable output. Full visual interaction testing has not been performed. The standalone executable is provided separately in DND_Loot_Roller_v3.0_Windows.zip.
+## Shared history in v3.1
 
-Suggested Windows smoke check after building: import the included workbook, accept its two warnings, resolve Table 2 / 27 and Table 3 / 33, try the Table 3 / 76 and Table 5 / 12 subtable buttons, restart to verify persistence, cancel a second import, and restore the original workbook.
+- Before rolling, type a player name or select one previously recorded. Blank names are recorded as `Unassigned`.
+- `Use D100`, `Roll D100` and `Roll Both` automatically save the timestamp with time-zone offset, player, workbook filename, worksheet name, D6, D100 and loot description. Missing loot results are saved too. Rolling only D6 does not award loot and does not create a record.
+- Subtable rolls create additional records containing the parent D6/D100, sub die, sub roll and full loot result. The original parent record remains, so repeated subtable rolls are visible.
+- Open **Shared History…** for the persistent records across every campaign/workbook. Select a player and/or spreadsheet, and check either date box to limit dates. Both endpoints are inclusive and use this computer's local dates. Blank player/spreadsheet filters mean all records. **Refresh** reads current saved data.
+- **Correct selected…** edits the chosen record's timestamp, player, workbook, sheet, dice and description. **Delete selected…** asks before removing that record. Changes are saved immediately; use Refresh to see changes made by another open app instance.
+- **Export filtered Excel…** writes only the currently filtered records to a real `.xlsx` file, with headers even for an empty selection. Values are written as literal text to preserve descriptions and avoid interpreting player text as formulas. The source loot workbook is never changed.
+- Spreadsheet identity is its filename, matching v3.0's imported snapshot. Use distinct filenames for campaign workbooks if you need distinct spreadsheet filters.
 
+History lives at `%LOCALAPPDATA%\DNDLootRoller\loot-history.json` for this Windows user, shared by all copies of the app on this computer. It is independent of `active-loot.json` and is not cloud-synced. Each successful change keeps the previous file as `loot-history.json.bak`. Writes are atomic and coordinated across app instances. A save failure is shown explicitly; unreadable history is never silently replaced.
+
+To back up or move history, close the app and copy the history JSON (and optionally its backup). To recover a damaged history file, close every app instance, preserve the damaged file elsewhere, and copy a known-good backup to `loot-history.json`. Player choices are derived from saved records. v3.0 session-only history cannot be recovered after the old app was closed.
+
+Suggested manual acceptance check: record rolls for two players in the original and an imported workbook, restart, verify each filter and both inclusive date endpoints, correct and delete a record, export a filtered selection and open it in Excel. Then test Table 3 / 76 and Table 5 / 12 subtables and restore the original workbook.

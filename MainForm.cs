@@ -22,12 +22,14 @@ internal sealed class MainForm : Form
     private readonly Button _subRollButton = new();
     private readonly ListBox _history = new();
     private LootEntry? _currentEntry;
+    private readonly ComboBox _player = new() { Width = 180, DropDownStyle = ComboBoxStyle.DropDown };
+    private int _lastD100;
 
     public MainForm()
     {
         _data = LootData.Load();
 
-        Text = "D&D Loot Roller — v3.0";
+        Text = "D&D Loot Roller — v3.1";
         StartPosition = FormStartPosition.CenterScreen;
         MinimumSize = new Size(760, 650);
         Size = new Size(900, 720);
@@ -56,7 +58,7 @@ internal sealed class MainForm : Form
     {
         var title = new Label
         {
-            Text = "D&D LOOT ROLLER  •  v3.0",
+            Text = "D&D LOOT ROLLER  •  v3.1",
             Dock = DockStyle.Top,
             Height = 62,
             TextAlign = ContentAlignment.MiddleCenter,
@@ -85,6 +87,10 @@ internal sealed class MainForm : Form
             Padding = new Padding(4)
         };
 
+        controls.Controls.Add(new Label { Text = "Player:", AutoSize = true, Margin = new Padding(4, 11, 4, 4) });
+        controls.Controls.Add(_player);
+        try { foreach (var name in HistoryStore.Read().Select(r => r.Player).Distinct().Order()) _player.Items.Add(name); }
+        catch (Exception ex) { Shown += (_, _) => MessageBox.Show(this, "History could not be loaded. It will not be overwritten.\n" + ex.Message); }
         controls.Controls.Add(new Label { Text = "D6 Table:", AutoSize = true, Margin = new Padding(4, 11, 4, 4) });
 
         _tableBox.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -172,7 +178,7 @@ internal sealed class MainForm : Form
             Margin = new Padding(3, 9, 15, 3)
         });
         historyHeader.Controls.Add(MakeButton("Copy Result", (_, _) => CopyCurrent()));
-        historyHeader.Controls.Add(MakeButton("Clear History", (_, _) => _history.Items.Clear()));
+        historyHeader.Controls.Add(MakeButton("Shared History…", (_, _) => { using var form = new HistoryForm(); form.ShowDialog(this); }));
         _issuesButton = MakeButton($"Data Issues ({_data.Issues.Count})", (_, _) => ShowIssues());
         historyHeader.Controls.Add(_issuesButton);
 
@@ -335,7 +341,7 @@ internal sealed class MainForm : Form
 
     private void ResolveLoot(int roll)
     {
-        _d100Result.Text = $"D100: {roll}";
+        _lastD100 = roll; _d100Result.Text = $"D100: {roll}";
         LootTable? table = _data.Tables.FirstOrDefault(t => t.Die == SelectedTable);
         _currentEntry = table?.Entries.FirstOrDefault(e => e.Matches(roll));
 
@@ -367,14 +373,23 @@ internal sealed class MainForm : Form
         string detail = subEntry?.Description ?? "No subtable entry found.";
         SetItemLink(subEntry == null ? null : ItemLinks.For(subEntry.Description, subEntry.BeyondUrl, _currentEntry.Description));
         _lootResult.Text = $"{_currentEntry.Description}\n\nD{_currentEntry.SubDie}: {subRoll}\n{detail}";
-        _history.Items.Insert(0, $"    ↳ D{_currentEntry.SubDie} {subRoll:00}: {detail}");
+        AddHistory(_lastD100, _lootResult.Text, _currentEntry.SubDie, subRoll);
     }
 
-    private void AddHistory(int d100, string result)
+    private void AddHistory(int d100, string result, int? subDie = null, int? subRoll = null)
     {
-        _history.Items.Insert(0, $"{DateTime.Now:HH:mm:ss} | D6 {SelectedTable} | D100 {d100:000} | {result}");
+        string player = string.IsNullOrWhiteSpace(_player.Text) ? "Unassigned" : _player.Text.Trim();
+        var record = new HistoryRecord { Player = player, Workbook = _sourceName,
+            Sheet = _data.Tables.FirstOrDefault(t => t.Die == SelectedTable)?.Name ?? "Unknown",
+            D6 = SelectedTable, D100 = d100, Loot = result, SubDie = subDie, SubRoll = subRoll };
+        try
+        {
+            HistoryStore.Change(rows => rows.Add(record));
+            if (!_player.Items.Contains(player)) _player.Items.Add(player);
+            _history.Items.Insert(0, $"{record.Timestamp.LocalDateTime:g} | {player} | {_sourceName} | D6 {SelectedTable} | D100 {d100} | {result.Replace("\n", " ")}");
+        }
+        catch (Exception ex) { MessageBox.Show(this, "The roll was NOT saved to history.\n\n" + ex.Message, "History save failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
     }
-
     private void CopyCurrent()
     {
         if (!string.IsNullOrWhiteSpace(_lootResult.Text))

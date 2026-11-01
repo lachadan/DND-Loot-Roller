@@ -19,6 +19,32 @@ public static class ImportTests
         Directory.CreateDirectory(scratch);
         try
         {
+            string hp = Path.Combine(scratch, "history.json");
+            Check(HistoryStore.Read(hp).Count == 0, "new history");
+            var first = new HistoryRecord { Player = "Alice", Workbook = "Campaign A.xlsx", Sheet = "Treasure", D6 = 1, D100 = 25, Loot = "=SUM(A1) & <gold>", Timestamp = new DateTimeOffset(2026, 10, 5, 12, 0, 0, TimeSpan.Zero) };
+            HistoryStore.Change(rows => rows.Add(first), hp);
+            HistoryStore.Change(rows => rows.Add(new HistoryRecord { Player = "Bob", Workbook = "Campaign B.xlsx", Sheet = "Magic", D6 = 6, D100 = 100, Loot = "Sword", SubDie = 8, SubRoll = 3, Timestamp = first.Timestamp.AddDays(2) }), hp);
+            var history = HistoryStore.Read(hp);
+            Check(history.Count == 2 && history[0].Id == first.Id && history[1].SubRoll == 3, "persistent cross campaign history and subroll");
+            Check(HistoryStore.Filter(history, "alice", "Campaign A.xlsx", first.Timestamp.LocalDateTime.Date, first.Timestamp.LocalDateTime.Date).Count == 1, "combined inclusive filters");
+            Check(HistoryStore.Filter(history, "Alice", "Campaign B.xlsx", null, null).Count == 0, "intersection filters");
+            Check(HistoryStore.Filter(history, "", "", null, first.Timestamp.LocalDateTime.Date).Count == 1, "end date filter");
+            HistoryStore.Change(rows => rows.Single(r => r.Id == first.Id).Player = "Corrected", hp);
+            Check(HistoryStore.Read(hp)[0].Player == "Corrected" && File.Exists(hp + ".bak"), "correction and backup");
+            string export = Path.Combine(scratch, "history.xlsx");
+            HistoryStore.Export(export, HistoryStore.Read(hp));
+            using (var book = ZipFile.OpenRead(export)) {
+                foreach (var entry in book.Entries) { using var stream = entry.Open(); XDocument.Load(stream); }
+                using var stream2 = book.GetEntry("xl/worksheets/sheet1.xml")!.Open(); var xml = XDocument.Load(stream2);
+                XNamespace hn = "http://schemas.openxmlformats.org/spreadsheetml/2006/main";
+                Check(xml.Descendants(hn + "row").Count() == 3, "xlsx row count");
+                Check(!xml.Descendants(hn + "f").Any() && xml.Descendants(hn + "t").Any(t => t.Value == first.Loot), "literal formula-safe Excel text");
+            }
+            HistoryStore.Change(rows => rows.RemoveAll(r => r.Id == first.Id), hp);
+            Check(HistoryStore.Read(hp).Count == 1, "persistent delete");
+            File.WriteAllText(hp, "broken");
+            try { HistoryStore.Change(rows => rows.Clear(), hp); throw new Exception("corrupt history accepted"); } catch (JsonException) { checks++; }
+            Check(File.ReadAllText(hp) == "broken", "corrupt history preserved");
             string original = Path.Combine(root, "Loot Table.xlsx");
             var imported = SpreadsheetImporter.Read(original);
             var embedded = JsonSerializer.Deserialize<LootData>(File.ReadAllText(Path.Combine(root, "loot_tables.json")), new JsonSerializerOptions { PropertyNameCaseInsensitive = true })!;
