@@ -1,0 +1,35 @@
+name: v4 Windows build and regression tests
+
+on:
+  push:
+    branches:
+      - feature/v4-dynamic-loot-engine
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Restore
+        run: dotnet restore DNDLootRoller.csproj
+      - name: Build Release
+        run: dotnet build DNDLootRoller.csproj -c Release --no-restore
+      - name: Regression tests
+        run: dotnet run --project Tests/ImportTests.csproj -- .
+      - name: Publish Windows x64
+        run: dotnet publish DNDLootRoller.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o artifacts/windows-x64
+      - name: Upload executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: DND-Loot-Roller-v4-alpha1-win-x64
+          path: artifacts/windows-x64/
